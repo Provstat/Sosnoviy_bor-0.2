@@ -56,6 +56,7 @@ namespace Sosnoviy_bor
                                 Canvas.Children.RemoveAt(G1.Indexes[P1.x, P1.y]);
                                 G1.Area[P1.x, P1.y] = (int)Sosnoviy_bor.Cells.Null;
                                 P1.Wood += 6;
+                                P1.Bullets--;
                                 Player_Resourses_Check();
                             }
                             break;
@@ -105,6 +106,7 @@ namespace Sosnoviy_bor
                                 W_Ob_price -= (int)(W_Ob_price / 11);
                                 S_Ob_price -= (int)(S_Ob_price / 11);
                                 C_Ob_price -= (int)(C_Ob_price / 11);
+                                P1.Dmg--;
                                 Player_Resourses_Check();
                             }
                             break;

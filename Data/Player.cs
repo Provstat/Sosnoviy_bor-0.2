@@ -28,6 +28,7 @@ namespace Sosnoviy_bor
             HP = 100000,
             hungry = 100000,
             Bullets = 1,
+            Dmg = 1,
             Coin = 0,
             Stone = 0,
             Wood = 0,

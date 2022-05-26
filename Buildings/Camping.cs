@@ -32,6 +32,7 @@ namespace Sosnoviy_bor
             main = wind;
             Im_Camp = new Image();
             main.Canvas.Children.Add(Im_Camp);
+            main.P1.Bullets++;
         }
         public void Initialize()
         {           

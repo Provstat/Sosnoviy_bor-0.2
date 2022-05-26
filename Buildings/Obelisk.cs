@@ -33,7 +33,7 @@ namespace Sosnoviy_bor
             main = wind;
             Im_Obelisk = new Image();
             main.Canvas.Children.Add(Im_Obelisk);
-            main.P1.Bullets++;
+            main.P1.Dmg++;
         }
         public void Initialize()
         {

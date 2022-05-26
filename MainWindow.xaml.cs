@@ -112,7 +112,7 @@ namespace Sosnoviy_bor
                     Familliar fam = new Familliar(this);
                     fam.x = x;
                     fam.y = y;
-                    fam.HP = 10 + P1.Score;
+                    fam.HP = 10 + P1.Score / 100;
                     fam.Initialize();
                     FamNum = 0;
                 }
@@ -144,7 +144,7 @@ namespace Sosnoviy_bor
                 sudden++;
                 if (sudden >= 6000 && (rnd.Next(0, 101) + P1.Score / 100) >= 95)
                 {
-                    P1.Damage(90000);
+                    P1.Damage(50000);
                     Kill = true;
                     sudden = 0;
                 }

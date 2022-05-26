@@ -95,7 +95,7 @@ namespace Sosnoviy_bor
             if (main.G1.Bullets[x, y] == (int)Sosnoviy_bor.Shells._1LVL_Player)
             {
                 Set_PNG("Familliar_DMG.png");
-                Get_Damage((int)Sosnoviy_bor.Shells._1LVL_Player);
+                Get_Damage(main.P1.Dmg);
                 get_dmg = true;
             }
             if (get_dmg)
