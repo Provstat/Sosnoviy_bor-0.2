@@ -43,11 +43,6 @@ namespace Sosnoviy_bor
             Progress.Visibility = Visibility.Visible;
             B_Remove.Visibility = Visibility.Visible;
             mS_timer.Start();
-            Familliar fam = new Familliar(this);
-            fam.x = 200;
-            fam.y = 200;
-            fam.HP = 10 + P1.Score;
-            fam.Initialize();
             FamNum = 0;
             P1.Initialize();
         }
