@@ -11,7 +11,7 @@
         <Image x:Name="Field" Height="700" Width="1000" Source="Field.png" Panel.ZIndex="-2"/>
         <Image x:Name="Menu" Height="700" Width="190" Canvas.Left="1000" Source="CMenu.png" Stretch="Fill" />
         <Button x:Name="B_Start" Content="Старт" Height="48" FontSize="24" Canvas.Left="1026" Canvas.Top="208" Width="136" FontWeight="Bold" Click="B_Start_Click"/>
-        <Label x:Name="L_Controls" Content="WASD - &#xD;&#xA;предвижение&#xD;&#xA;&#xD;&#xA;ЛКМ -  &#xD;&#xA;выстрел и&#xD;&#xA;взимодействие" Height="177" Canvas.Left="1005" Canvas.Top="298" Width="185" FontSize="24" FontFamily="Arial" Foreground="White"/>
+        <Label x:Name="L_Controls" Content="WASD - &#xA;предвижение&#xA;&#xA;ЛКМ -  &#xA;выстрел и&#xA;взаимодей-&#xD;&#xA;ствие" Height="209" Canvas.Left="1005" Canvas.Top="298" Width="185" FontSize="24" FontFamily="Arial" Foreground="White"/>
         <Image x:Name="Im_HP" Height="50" Width="50" Canvas.Left="1070" Canvas.Top="25" Source="HP.png" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
         <ProgressBar x:Name="HP_BAR" Height="37" Canvas.Left="1026" Canvas.Top="80" Width="136" Value="50" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden" Maximum="100000" Background="Black" Foreground="#FFFA3E46" BorderBrush="Black"/>
         <ProgressBar x:Name="Hunger_BAR" Height="37" Canvas.Left="1026" Canvas.Top="189" Width="136" Maximum="100000" Value="500" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden" Background="Black" BorderBrush="Black" Foreground="#FFFBEAA5"/>

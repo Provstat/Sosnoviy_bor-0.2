@@ -1,21 +1,5 @@
-﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace Sosnoviy_bor
 {
@@ -100,7 +84,7 @@ namespace Sosnoviy_bor
                             {
                                 Canvas.Children.RemoveAt(G1.Indexes[P1.x, P1.y]);
                                 G1.Area[P1.x, P1.y] = (int)Sosnoviy_bor.Cells.Null;
-                                P1.Wood += (int)(0.6*W_Ob_price*0.9);
+                                P1.Wood += (int)(0.6 * W_Ob_price * 0.9);
                                 P1.Stone += (int)(0.6 * S_Ob_price * 0.9);
                                 P1.Coin += (int)(0.6 * C_Ob_price * 0.9);
                                 W_Ob_price -= (int)(W_Ob_price / 11);
@@ -110,7 +94,8 @@ namespace Sosnoviy_bor
                                 Player_Resourses_Check();
                             }
                             break;
-                        default: MessageBox.Show("Не знаю как можно получить эту ошибку(921)");
+                        default:
+                            MessageBox.Show("Не знаю как можно получить эту ошибку(921)");
                             break;
 
                     }

@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Sosnoviy_bor
 {
@@ -55,7 +45,7 @@ namespace Sosnoviy_bor
         }
         private void B_Sawmill_Click(object sender, RoutedEventArgs e)
         {
-            if (main.P1.Wood >= 20 && main.P1.Stone >=50 && main.P1.Coin >=5)
+            if (main.P1.Wood >= 20 && main.P1.Stone >= 50 && main.P1.Coin >= 5)
             {
                 main.Interface_On();
                 this.Close();
@@ -95,6 +85,13 @@ namespace Sosnoviy_bor
             {
                 MessageBox.Show("Не хавтает 資源");
             }
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            main.Interface_On();
+            this.Close();
+            main.Activate();
         }
     }
 }

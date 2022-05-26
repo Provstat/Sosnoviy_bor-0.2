@@ -1,21 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
+﻿using System.Windows;
 
 namespace Sosnoviy_bor
 {
@@ -49,7 +32,7 @@ namespace Sosnoviy_bor
         }
         private void B_Lore_Action()
         {
-            MessageBox.Show(this, 
+            MessageBox.Show(this,
                 "\tЖаркий летний полдень. Вокруг только природа, лес. " +
                 "Впереди проложена дорога. Ее размер указывает на ее важность. " +
                 "Справа от дороги стоит разрушенное каменного сооружение. " +
@@ -60,7 +43,7 @@ namespace Sosnoviy_bor
                 "Какие-то подобия рук из синего полупрозрачноко, как дерево твердого, материала. " +
                 "Ни тропа, ни руины вам не знакомы.",
                 "4000 лье в глубине леса (1 из 4)");
-            MessageBox.Show(this, 
+            MessageBox.Show(this,
                 "\tПытаясь найти что-нибудь и следуя по дороге, вы по всем законам жанра " +
                 "должны были заблудиться и вернуться назад, однако вы решили сыграть на зло " +
                 "сценаристу, разработчику и богу этого мира в одном лице назло и вернуться назад самостоятельно." +
@@ -71,9 +54,9 @@ namespace Sosnoviy_bor
                 "Вы можете смешать ресурсы и получить ауру, которая будет напоминать строения из возможного человеческого прошлого. " +
                 "Установленная Аура может принять образ палатки, лесопилки и камненоломни, в зависимости от функционала." +
                 "Однако образ обелиска не кажется иллюзией, хотя вряд-ли такой прочный монумент можно создать из обычных булыжников..." +
-                "\n\tНельзя же???", 
+                "\n\tНельзя же???",
                 "4000 лье в глубине леса (2 из 4)");
-            MessageBox.Show(this, 
+            MessageBox.Show(this,
                 "\tВ голове (или в чем-то, что ее напоминает) у вас всплывают образы человека, " +
                 "едущего на автомобиле по, казалось бы этой же дороге, только асфальтированной. " +
                 "Вокруг нет деревьев, вокруг луга, однако вдали видно сосновый лес, как будто он переехал. " +

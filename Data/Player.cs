@@ -1,25 +1,13 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Sosnoviy_bor
 {
-    public class Player 
+    public class Player
     {
         public int
             x = 450,
@@ -38,7 +26,7 @@ namespace Sosnoviy_bor
         MainWindow main;
         Image Im_Player;
         DispatcherTimer mS_timer;
-        public Player (MainWindow wind)
+        public Player(MainWindow wind)
         {
             main = wind;
             Im_Player = new Image();
@@ -63,7 +51,7 @@ namespace Sosnoviy_bor
             Im_Player.Source = bi3;
             mS_timer.Start();
         }
-        public void Pos_Check ()
+        public void Pos_Check()
         {
             Canvas.SetLeft(Im_Player, x - 1);
             Canvas.SetTop(Im_Player, y - 1);
@@ -109,7 +97,7 @@ namespace Sosnoviy_bor
         {
             if (HP >= dmg)
             {
-                HP -= dmg; 
+                HP -= dmg;
             }
             else
             {
@@ -118,8 +106,8 @@ namespace Sosnoviy_bor
                 main.Canvas.Children.Remove(Im_Player);
                 main.Tstop();
             }
-            
-            
+
+
         }
         public void Hungry()
         {
@@ -161,7 +149,7 @@ namespace Sosnoviy_bor
                 HP = 100000;
             }
 
-            
+
         }
         public void Shoot()
         {

@@ -1,20 +1,8 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Sosnoviy_bor
@@ -96,19 +84,19 @@ namespace Sosnoviy_bor
         }
         void mS_timer_Tick(object sender, EventArgs e)
         {
-            
+
             mS_timer_tick++;
             x -= X_Change;
             y -= Y_Change;
             Canvas.SetLeft(Im_Bullet, x);
             Canvas.SetTop(Im_Bullet, y);
-            if(mS_timer_tick == 200 || x >= 990 || x <= 10 || y>= 690 || y <= 10)
+            if (mS_timer_tick == 200 || x >= 990 || x <= 10 || y >= 690 || y <= 10)
             {
                 main.P1.Bullets++;
                 main.Canvas.Children.Remove(Im_Bullet);
                 mS_timer.Stop();
             }
-            Target_Check();          
+            Target_Check();
         }
     }
 }

@@ -1,20 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Sosnoviy_bor
@@ -79,14 +65,14 @@ namespace Sosnoviy_bor
             mS_timer.Interval = new TimeSpan(0, 0, 0, 0, 1);
             mS_timer.Tick += new EventHandler(mS_timer_Tick);
             processes = new Processes();
-            
+
         }
         public void BerrySpawn()
         {
             BerNum++;
             if (BerNum >= 100 && G1.HaveBerry == false)
             {
-                
+
                 G1.HaveBerry = true;
                 int x = rnd.Next(0, 9) * 50;
                 int y = rnd.Next(0, 6) * 50;
@@ -102,7 +88,7 @@ namespace Sosnoviy_bor
         public void FamilliarSpawn()
         {
             FamNum++;
-            if (FamNum >=6000 - (P1.Score / 10))
+            if (FamNum >= 6000 - (P1.Score / 10))
             {
                 int x, y;
                 x = rnd.Next(0, 20) * 50;
@@ -169,8 +155,8 @@ namespace Sosnoviy_bor
         private void Mining(int Wood_Value, int Stone_Value, int Coin_Value)
         {
             P1.Wood += (rnd.Next(0, 3 + Wood_Value) + Wood_Value * Sawmills);
-            P1.Stone += (rnd.Next(0, 3 + Stone_Value) + Stone_Value*Quarrys);
-            P1.Coin +=(rnd.Next(0, 3 + Coin_Value)*(int)(Coin_Value*0.5*(Obelisks + 1)));
+            P1.Stone += (rnd.Next(0, 3 + Stone_Value) + Stone_Value * Quarrys);
+            P1.Coin += (rnd.Next(0, 3 + Coin_Value) * (int)(Coin_Value * 0.5 * (Obelisks + 1)));
         }
         public void Interface_Off()
         {
@@ -191,7 +177,7 @@ namespace Sosnoviy_bor
             {
                 P1.Wood += (int)(Sawmills + Sawmills * 0.1 * Obelisks);
                 P1.Stone += (int)(Quarrys + Quarrys * 0.1 * Obelisks);
-                int chance = (int)Math.Floor((double)(1/ rnd.Next(1, 10)));
+                int chance = (int)Math.Floor((double)(1 / rnd.Next(1, 10)));
                 P1.Coin += (int)(chance * Quarrys + chance * 0.1 * Obelisks);
                 Player_Resourses_Check();
                 income = 0;
@@ -206,6 +192,6 @@ namespace Sosnoviy_bor
             Progress_Bar();
             Income();
         }
-       
+
     }
 }

@@ -1,20 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Sosnoviy_bor
@@ -53,7 +40,7 @@ namespace Sosnoviy_bor
         public void Initialize()
         {
             Canvas canvas = (Canvas)Im_Bullet.Parent;
-            main.G1.Indexes[(int)(x-1)/50, (int)(y-1)/50] = main.Canvas.Children.IndexOf(Im_Bullet);
+            main.G1.Indexes[(int)(x - 1) / 50, (int)(y - 1) / 50] = main.Canvas.Children.IndexOf(Im_Bullet);
             Im_Bullet.Height = 16;
             Im_Bullet.Width = 16;
             Canvas.SetLeft(Im_Bullet, x * 50 + 25);
