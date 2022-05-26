@@ -62,6 +62,7 @@ namespace Sosnoviy_bor
             FamNum = 0,
             BerNum = 0;
         public bool
+            press_start = false,
             removing = false,
             Kill = false,
             Progressing = false;

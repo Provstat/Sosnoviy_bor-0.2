@@ -24,6 +24,7 @@ namespace Sosnoviy_bor
         private void B_Start_Action()
         {
             B_Start.IsEnabled = false;
+            press_start = true;
             B_Start.Visibility = Visibility.Hidden;
             L_Controls.Visibility = Visibility.Hidden;
             B_Lore.Visibility = Visibility.Hidden;

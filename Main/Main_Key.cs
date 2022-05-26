@@ -48,7 +48,10 @@ namespace Sosnoviy_bor
         }
         private void Main_Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            P1.Shoot();
+            if (press_start)
+            {
+                P1.Shoot();
+            }
         }
     }
 }
