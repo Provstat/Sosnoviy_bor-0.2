@@ -170,7 +170,7 @@ namespace Sosnoviy_bor
         {
             P1.Wood += (rnd.Next(0, 3 + Wood_Value) + Wood_Value * Sawmills);
             P1.Stone += (rnd.Next(0, 3 + Stone_Value) + Stone_Value*Quarrys);
-            P1.Coin +=(rnd.Next(0, 3 + Coin_Value)*(int)(Coin_Value*0.5*Obelisks));
+            P1.Coin +=(rnd.Next(0, 3 + Coin_Value)*(int)(Coin_Value*0.5*Obelisks)+1);
         }
         public void Interface_Off()
         {
